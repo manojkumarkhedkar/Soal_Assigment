@@ -1,0 +1,64 @@
+git init 
+The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+
+git clone <link>
+create a clone, or copy of the target repository in local machine
+
+git status
+The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git
+
+git add <filename>
+The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit
+
+git commit -m "message"
+The "commit" command is used to save your changes to the local repository -m is to give message when saving a file
+
+git push origin <branchName>
+The git push origin command is used for pushing to the remote repository with the specific branch name
+
+git branch
+To see local branches, run this command:
+
+git branch -r
+To see remote branches, run this command:
+
+git branch -a
+To see all local and remote branches, run this command:
+
+git checkout -b my-branch-name
+Create a New Branch
+
+
+
+git checkout my-branch-name
+Switch to a Branch In Your Local Repo
+
+git switch <branchName>
+To move from 1 Branch to other branch
+
+git rm <filename>
+it delete file locally from machine
+
+git tag <v1.o>
+it create tags
+
+git tag
+it show tag
+
+git show <v1.0>
+it show details of version
+
+git push origin <v1.0>
+push single tag to remote
+
+git push origin --tags
+it push all tags to remote
+
+
+
+Delete Branches
+To delete a remote branch, run this command:
+git push origin --delete my-branch-name
+To delete a local branch, run either of these commands:
+git branch -d my-branch-name
+git branch -D my-branch-name
